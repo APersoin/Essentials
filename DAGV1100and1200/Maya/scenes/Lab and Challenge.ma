@@ -1,11 +1,15 @@
 //Maya ASCII 2026 scene
 //Name: Lab and Challenge.ma
-//Last modified: Tue, Sep 30, 2025 10:54:34 PM
+//Last modified: Fri, Oct 03, 2025 06:48:48 PM
 //Codeset: 1252
 file -rdi 1 -ns "Unit4_CurvesLab" -rfn "Unit4_CurvesLabRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Unit4_CurvesLab.ma";
+file -rdi 1 -ns "Unit5_LabScene" -rfn "Unit5_LabSceneRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Unit5_LabScene.ma";
 file -r -ns "Unit4_CurvesLab" -dr 1 -rfn "Unit4_CurvesLabRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Unit4_CurvesLab.ma";
+file -r -ns "Unit5_LabScene" -dr 1 -rfn "Unit5_LabSceneRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Unit5_LabScene.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -16,17 +20,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "0DFE9308-46AA-612C-858B-FA8FDBEF8AE3";
+fileInfo "UUID" "CF7D6D1D-4766-E46E-E4EC-CAA75E87C0C7";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "79D292C3-4949-5EAB-D879-B6B9B029245C";
-	setAttr ".t" -type "double3" 8.7796817380060812 6.5039934871419813 -16.405390980855913 ;
-	setAttr ".r" -type "double3" -359.13835261766349 4084.9999999919 0 ;
+	setAttr ".t" -type "double3" 29.225847952964305 24.859087536886939 -29.871226617156065 ;
+	setAttr ".r" -type "double3" -386.13835259717501 4095.3999999867674 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "38AE17B8-4BC9-6195-B932-B28EC5E4794E";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 18.661828944008317;
+	setAttr ".coi" 44.110385717656214;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -604,6 +608,7 @@ createNode mesh -n "WallShape2" -p "Wall2";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Chair";
 	rename -uid "BAD52C93-4553-33B4-F9D3-2F97533B98A9";
+	setAttr ".t" -type "double3" 1.6085862009140806 0 0 ;
 	setAttr ".rp" -type "double3" 0 0 -10.990331649780273 ;
 	setAttr ".sp" -type "double3" 0 0 -10.990331649780273 ;
 createNode transform -n "Chair" -p "|Chair";
@@ -2896,6 +2901,8 @@ createNode mesh -n "ChairLegShape4" -p "ChairLeg4";
 	setAttr ".de" 1;
 createNode transform -n "Table";
 	rename -uid "8E15AFA9-4C22-1E75-12AC-E4BBBD8E08B1";
+	setAttr ".t" -type "double3" 1.8147030302221447 0 -4.8321881945329714 ;
+	setAttr ".r" -type "double3" 0 -89.999999999999929 0 ;
 createNode transform -n "TableLeg4" -p "|Table";
 	rename -uid "81F18100-4847-7080-1221-ECBAF249C51B";
 	setAttr ".rp" -type "double3" 4.1282438926089844 0.173389732837677 -8.5033698812036995 ;
@@ -10876,20 +10883,20 @@ createNode mesh -n "VaseShape" -p "Vase";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CB43BCC4-42DF-47F9-F87A-C6A74272F3D8";
-	setAttr -s 5 ".lnk";
-	setAttr -s 5 ".slnk";
+	rename -uid "C0AACC0F-42E7-4A8D-C895-ADB970446558";
+	setAttr -s 12 ".lnk";
+	setAttr -s 12 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A2B94755-45A4-DAE5-8BD2-ADA90A46C829";
+	rename -uid "4DD92317-4985-E9C9-418A-DDABCE7FBD0D";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B89192DA-4647-56C0-07BC-B09CD6B5DD49";
+	rename -uid "8CF87474-43D6-B80A-B20C-25AABF522925";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "0537D8AA-483A-C2B1-9B99-D29BA046DB96";
+	rename -uid "FF3546F1-4090-69FC-4A40-7183271C4EF6";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FCAA5BCE-4300-601E-21C3-629231B22B1A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "4DD73A40-4871-A5DB-00A1-9DA203619193";
+	rename -uid "AAE3F6FC-4EB3-56D0-06FC-D39528982175";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "05BD6FF8-4535-05BD-AFAF-4BB52EEEC459";
 	setAttr ".g" yes;
@@ -11579,6 +11586,23 @@ createNode reference -n "Unit4_CurvesLabRN";
 		2 "|Unit4_CurvesLab:Vase" "scale" " -type \"double3\" 1.89985026279403213 1.89985026279403213 1.89985026279403213";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "Unit5_LabSceneRN";
+	rename -uid "20AB8CCE-4925-BE84-7D65-0C8DBB884E2D";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Unit5_LabSceneRN"
+		"Unit5_LabSceneRN" 0
+		"Unit5_LabSceneRN" 5
+		2 "|Unit5_LabScene:Sofa_Base" "translate" " -type \"double3\" 0.8805740747591031 0.32813275409356057 11.63777251773799293"
+		
+		2 "|Unit5_LabScene:Sofa_Base" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
+		
+		2 "|Unit5_LabScene:Sofa_Base" "rotatePivot" " -type \"double3\" 0 -0.32813275409356057 0"
+		
+		2 "|Unit5_LabScene:Sofa_Base" "scalePivot" " -type \"double3\" 0 0.33150530576873705 0"
+		
+		2 "|Unit5_LabScene:Sofa_Base" "scalePivotTranslate" " -type \"double3\" 0 -0.65963805986229707 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -11590,14 +11614,14 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 5 ".st";
+	setAttr -s 12 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 9 ".s";
+	setAttr -s 15 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 2 ".r";
+	setAttr -s 3 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -11605,7 +11629,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 49 ".dsm";
+	setAttr -s 51 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
