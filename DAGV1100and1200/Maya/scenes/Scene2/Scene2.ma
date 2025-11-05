@@ -1,7 +1,11 @@
 //Maya ASCII 2026 scene
 //Name: Scene2.ma
-//Last modified: Sun, Nov 02, 2025 07:42:50 PM
+//Last modified: Tue, Nov 04, 2025 10:06:43 PM
 //Codeset: 1252
+file -rdi 1 -ns "DiningTable" -rfn "DiningTableRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Scene2/DiningTable.ma";
+file -r -ns "DiningTable" -dr 1 -rfn "DiningTableRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Scene2/DiningTable.ma";
 requires maya "2026";
 requires "mtoa" "5.5.3";
 currentUnit -l centimeter -a degree -t film;
@@ -10,18 +14,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "83BE3EB4-4165-CA85-D3B1-E09D6647FF4E";
+fileInfo "UUID" "D5489D97-494E-6F7B-23C3-CA97530BD43A";
 createNode transform -s -n "persp";
 	rename -uid "77DE8EC6-4B51-29E8-BA0E-A3A2BBE49411";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -44.409473579907775 10.98714731899279 46.957844996825131 ;
-	setAttr ".r" -type "double3" -8.1383527440266121 678.19999999993468 5.3330936925196383e-16 ;
+	setAttr ".t" -type "double3" -18.178906213336106 12.592878889206236 21.840131426330956 ;
+	setAttr ".r" -type "double3" -23.138352743961192 688.9999999998945 9.276353282672525e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0B860E88-493D-4C77-022D-53878B651996";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 73.318155311445494;
+	setAttr ".coi" 34.518106646037623;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -537,6 +541,7 @@ createNode mesh -n "TableShape1" -p "Table1";
 		-2.8865799e-15 -5.7731597e-15 0 -2.8865799e-15;
 createNode transform -n "Table2" -p "Tables";
 	rename -uid "BCA5E6D4-4843-971F-1313-92BA348CD6B3";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" -7.9129961640326583 1.2915987337374082 3.63144353714475 ;
 	setAttr ".s" -type "double3" 2.829921284982833 2.829921284982833 2.829921284982833 ;
 	setAttr ".rp" -type "double3" 0 1 0 ;
@@ -2339,20 +2344,20 @@ createNode mesh -n "ReservationsShape" -p "Reservations";
 		0.90239799 1.2490009e-13 -6.1062266e-15 0.90239799 1.0780266e-13 6.1062266e-15 0.90239799 
 		1.2490009e-13 -6.1062266e-15 0 1.0780266e-13 6.1062266e-15 0 1.2490009e-13;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B84800B9-49C4-4482-8BD8-CBA97F31B495";
-	setAttr -s 2 ".lnk";
-	setAttr -s 2 ".slnk";
+	rename -uid "423A8F42-44E3-8EF5-59C1-4A9DE9CA5D28";
+	setAttr -s 10 ".lnk";
+	setAttr -s 10 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A461131C-4611-BC19-DBCE-E4B8180A031C";
+	rename -uid "CB2893B6-4E62-5802-85B3-818141BFE9D9";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8430CCC8-4EAC-F4B2-BB5E-99B47AE368B3";
+	rename -uid "197EAEF2-47A4-460A-1BC7-99829A0835B2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C6BBBF05-4C2B-9C43-3337-B88B9807E7F1";
+	rename -uid "30F82E78-461D-CC2D-B893-F789342A93E5";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D3A5A154-4214-326F-5496-128FFAAD4409";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "46BDD884-44D5-84C0-9538-F189D3E751C1";
+	rename -uid "93D7CA26-492C-0222-8E88-A5B1B525A078";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "07B6B252-4A1A-F9E9-1604-C28F9360CB9B";
 	setAttr ".g" yes;
@@ -2431,6 +2436,16 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "A6AB8064-4377-EF68-BA1A-499FDDE8DC6E";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode reference -n "DiningTableRN";
+	rename -uid "F261721A-4AD7-8E71-A73B-50B27F31E44F";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"DiningTableRN"
+		"DiningTableRN" 0
+		"DiningTableRN" 2
+		2 "|DiningTable:Table" "visibility" " 1"
+		2 "|DiningTable:Table" "translate" " -type \"double3\" -7.93501659145799998 0 3.59253576499986149";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -2442,13 +2457,18 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 2 ".st";
+	setAttr -s 10 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 6 ".s";
+	setAttr -s 13 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
+select -ne :defaultRenderUtilityList1;
+	setAttr -s 7 ".u";
 select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
+select -ne :defaultTextureList1;
+	setAttr -s 7 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
