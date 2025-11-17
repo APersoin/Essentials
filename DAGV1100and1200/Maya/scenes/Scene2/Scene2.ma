@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Scene2.ma
-//Last modified: Thu, Nov 13, 2025 08:39:15 PM
+//Last modified: Sun, Nov 16, 2025 08:59:14 PM
 //Codeset: 1252
 file -rdi 1 -ns "DiningTable" -rfn "DiningTableRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Scene2/DiningTable.ma";
@@ -17,18 +17,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "4A7D89DE-4C65-01B1-4EA1-5DB423D42677";
+fileInfo "UUID" "2D8B86A9-4659-A54C-8623-9C8EC3551B3E";
 createNode transform -s -n "persp";
 	rename -uid "77DE8EC6-4B51-29E8-BA0E-A3A2BBE49411";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -39.827161728672792 24.949451053824276 6.1240530283414243 ;
-	setAttr ".r" -type "double3" -28.538352745707016 639.00000000033674 0 ;
+	setAttr ".t" -type "double3" -39.827161728671463 24.949451053823548 6.1240530283412138 ;
+	setAttr ".r" -type "double3" -28.538352745707019 639.00000000033674 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0B860E88-493D-4C77-022D-53878B651996";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 50.950556885207128;
+	setAttr ".coi" 50.950556885205678;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2209,20 +2209,20 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 		5.9370022 -4.2632564e-13 8.1096287 -5.9370022 -4.3964832e-13 8.1096287 -5.9370022 
 		-4.2632564e-13 0 -5.9370022 -4.3964832e-13 0 -5.9370022;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "BDAE36DA-4533-D4CB-5EF2-73946A049F59";
+	rename -uid "F0DFF63C-4FCE-9A92-E594-F1BED455B3C2";
 	setAttr -s 14 ".lnk";
 	setAttr -s 14 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "1D597F6F-408D-A686-704A-4CBBD0D9EE9B";
+	rename -uid "CF194B4C-4B7C-9603-0331-EF99A558D11A";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3423C21B-4E25-7798-4921-2E9C832D8119";
+	rename -uid "72FAA6CC-4CDE-99BA-A4AA-AFBFB7B375D9";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "56EFA1BF-4DF1-1539-5260-B7837BB728B7";
+	rename -uid "0F5F0950-4D2B-311B-2742-DEBE800E8D30";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D3A5A154-4214-326F-5496-128FFAAD4409";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "977EAE1E-4069-35AB-D917-FEA609D48132";
+	rename -uid "5A7EADCA-42FA-4C78-B411-58ACB2B6AC83";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "07B6B252-4A1A-F9E9-1604-C28F9360CB9B";
 	setAttr ".g" yes;
@@ -2441,8 +2441,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "polyPlane1.out" "FloorShape.i";
 connectAttr "polyCube1.out" "WallShape.i";
 connectAttr "polyCube2.out" "pCubeShape1.i";
