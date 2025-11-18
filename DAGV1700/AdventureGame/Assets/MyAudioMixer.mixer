@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-8192814850446549582
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 247a3285f239e9a4aa8295e8da63e826
+  m_EffectName: Attenuation
+  m_MixLevel: f5bb9748e4fcbaf4ea5076a6f41b0f07
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-7953319512719806193
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -53,12 +67,13 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 8e567b45e5c0d7244855ff5ca0db31ea
   m_FloatValues:
+    79441f633144be442a0aa777b75b870b: -80
     7a0523a306f701b4f8d0357211f7939a: 4.67
     6e20f8146e403074d9a26f89b7172cc1: 0.83
     b2a2319727d27f649b03cfd5c7345817: 0
     b55b4028e19f55d49bdce2dffa4cb7c4: 345
-    42d5488aaea1d7042afaf5d52f67d304: -80
-    1c36074d6696b1241873b8dba53f6580: -0.006632369
+    42d5488aaea1d7042afaf5d52f67d304: -0.43201196
+    1c36074d6696b1241873b8dba53f6580: -80
   m_TransitionOverrides: {}
 --- !u!244 &-1118784127530482444
 AudioMixerEffectController:
@@ -93,6 +108,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!245 &-59208150155408672
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BerrySnapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: bc84a090109fbe24cba1cf2ab420b999
+  m_FloatValues:
+    7a0523a306f701b4f8d0357211f7939a: 4.67
+    6e20f8146e403074d9a26f89b7172cc1: 0.83
+    b2a2319727d27f649b03cfd5c7345817: -80
+    b55b4028e19f55d49bdce2dffa4cb7c4: 345
+    42d5488aaea1d7042afaf5d52f67d304: -0.15291947
+    1c36074d6696b1241873b8dba53f6580: -80
+  m_TransitionOverrides: {}
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -106,6 +138,7 @@ AudioMixerController:
   - {fileID: 24500006}
   - {fileID: 3187466047023080233}
   - {fileID: -2015505033101614248}
+  - {fileID: -59208150155408672}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -117,6 +150,7 @@ AudioMixerController:
     - 648d87f6f9ff4bc48bd9ad747c8b831c
     - f3b1993923639704f9f1dcd2f7cd0608
     - 02482b91623d8794380e6baa1b1146eb
+    - cc55632128f505a449c4535a54586c21
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -133,6 +167,7 @@ AudioMixerGroupController:
   - {fileID: -7953319512719806193}
   - {fileID: 5728115309760812840}
   - {fileID: -78433934156963702}
+  - {fileID: 355176368154180390}
   m_Volume: 03e68484182b33b4fbe0c4f92f8527e6
   m_Pitch: ab5be92785bbff042b0b2e0a86ca1c1b
   m_Send: 00000000000000000000000000000000
@@ -166,9 +201,29 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: cfc4eb6ab7d5df54fb1ef516b1027f32
   m_FloatValues:
-    b2a2319727d27f649b03cfd5c7345817: -80
-    1c36074d6696b1241873b8dba53f6580: 0
+    79441f633144be442a0aa777b75b870b: -0.0123930825
+    b2a2319727d27f649b03cfd5c7345817: 0.0070013776
+    1c36074d6696b1241873b8dba53f6580: -0.08733832
   m_TransitionOverrides: {}
+--- !u!243 &355176368154180390
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Berries
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: cc55632128f505a449c4535a54586c21
+  m_Children: []
+  m_Volume: 79441f633144be442a0aa777b75b870b
+  m_Pitch: eeae196fd0806994880221642a033264
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -8192814850446549582}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!245 &3187466047023080233
 AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
@@ -179,9 +234,11 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: be885b99285abc641b20054ae0893cd0
   m_FloatValues:
+    79441f633144be442a0aa777b75b870b: -80
     6e20f8146e403074d9a26f89b7172cc1: 0.83
+    b2a2319727d27f649b03cfd5c7345817: -80
     b55b4028e19f55d49bdce2dffa4cb7c4: 345
-    42d5488aaea1d7042afaf5d52f67d304: 0
+    42d5488aaea1d7042afaf5d52f67d304: -0.15291947
     1c36074d6696b1241873b8dba53f6580: -0.006632369
   m_TransitionOverrides: {}
 --- !u!244 &3786893310550186334
