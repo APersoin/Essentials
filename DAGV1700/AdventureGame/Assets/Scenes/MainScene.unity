@@ -1230,7 +1230,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1279799766}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
@@ -1242,7 +1242,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1279799766}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
@@ -1628,7 +1628,7 @@ PrefabInstance:
     - target: {fileID: 2893580386468053368, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     - target: {fileID: 5471875227667789762, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -1636,11 +1636,11 @@ PrefabInstance:
     - target: {fileID: 7856896400322166973, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     - target: {fileID: 9166025551946714782, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1705,7 +1705,7 @@ PrefabInstance:
     - target: {fileID: 4993643890503099820, guid: 1f1aba2fa6e21d641a3b61b2247311d5, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     - target: {fileID: 4993643890503099820, guid: 1f1aba2fa6e21d641a3b61b2247311d5, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
@@ -2067,7 +2067,7 @@ PrefabInstance:
     - target: {fileID: 8267461300393625595, guid: 5dc0b70a9bfc26c479ebf8d4dd9dcad8, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     - target: {fileID: 8267461300393625595, guid: 5dc0b70a9bfc26c479ebf8d4dd9dcad8, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
@@ -2729,8 +2729,8 @@ GameObject:
   - component: {fileID: 1279799765}
   - component: {fileID: 1279799768}
   - component: {fileID: 1279799767}
-  - component: {fileID: 1279799766}
   - component: {fileID: 1279799769}
+  - component: {fileID: 1279799770}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -2757,19 +2757,6 @@ RectTransform:
   m_AnchoredPosition: {x: -270, y: -20}
   m_SizeDelta: {x: 200, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1279799766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279799764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddf1b3746124a41cd90cb0e79f73be2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleImageBehaviour
-  dataObj: {fileID: 11400000, guid: 5265fc9bf5687b642ab82a31635cb33d, type: 2}
 --- !u!114 &1279799767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2839,6 +2826,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1279799770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279799764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f7750b9be60dd44bfba3e2bcf58213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MySimpleImageBehaviour
+  dataObj: {fileID: 0}
 --- !u!198 &1354208889 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 842374597688823288, guid: e760143ffb2405d409f3942446e82540, type: 3}
@@ -3581,6 +3581,7 @@ GameObject:
   - component: {fileID: 1586952436}
   - component: {fileID: 1586952437}
   - component: {fileID: 1586952438}
+  - component: {fileID: 1586952441}
   - component: {fileID: 1586952440}
   - component: {fileID: 1586952439}
   m_Layer: 0
@@ -3731,6 +3732,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1586952441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586952435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9914d55c3075a4b14a80c1204e72e335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlipTransformBehaviour
+  key1: 100
+  key2: 97
+  direction1: 0
+  direction2: 180
 --- !u!1001 &1659871715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3813,8 +3830,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1733990368}
   - component: {fileID: 1733990367}
-  - component: {fileID: 1733990366}
   - component: {fileID: 1733990372}
+  - component: {fileID: 1733990373}
   m_Layer: 3
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -3822,21 +3839,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1733990366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733990364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e8cbbe35153640cea23bf58a428eab0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 2.8
-  gravity: -9.81
 --- !u!143 &1733990367
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3942,6 +3944,21 @@ MonoBehaviour:
   exitHoldTime: 0.01
   canRepeat: 0
   repeatTimes: 10
+--- !u!114 &1733990373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733990364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c37db4b5b60fc46a4f51df17beaa3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MySimpleCharacterController
+  moveSpeed: 5
+  jumpForce: 1
+  gravity: -9.81
 --- !u!1 &1791170826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4671,7 +4688,7 @@ PrefabInstance:
     - target: {fileID: 2434587936259614331, guid: 4a3ad8087f7971045b6816d73ea6da84, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     - target: {fileID: 2434587936259614331, guid: 4a3ad8087f7971045b6816d73ea6da84, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
@@ -4885,7 +4902,7 @@ PrefabInstance:
     - target: {fileID: 1469141188030486945, guid: 5aee70d3532c13847bbb0eb41662cb65, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1279799766}
+      objectReference: {fileID: 0}
     - target: {fileID: 1469141188030486945, guid: 5aee70d3532c13847bbb0eb41662cb65, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
