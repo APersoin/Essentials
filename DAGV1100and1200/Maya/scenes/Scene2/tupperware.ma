@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: tupperware.ma
-//Last modified: Fri, Nov 21, 2025 03:37:48 PM
+//Last modified: Fri, Nov 21, 2025 03:40:10 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "F0EE64DA-4BA2-2C55-337D-879DA7414496";
+fileInfo "UUID" "025CA3DD-49FC-FEDA-BE4A-719573B7992B";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "0B5CC58A-4462-581E-9FD8-8DB7164DCC75";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.049809099614195218 1.749894445764355 8.5182693447790445 ;
-	setAttr ".r" -type "double3" -5.7383527302135775 3238.5999999972651 -1.2427751535311567e-17 ;
+	setAttr ".t" -type "double3" 0.13402072560030076 1.8618428185566387 8.8916296012833111 ;
+	setAttr ".r" -type "double3" -9.9383527298051337 3234.599999996321 9.9835406865874851e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BDB8A500-4D75-0C11-211C-7B8FC87EF6A8";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 8.5419567861168062;
+	setAttr ".coi" 9.3434560640898745;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
