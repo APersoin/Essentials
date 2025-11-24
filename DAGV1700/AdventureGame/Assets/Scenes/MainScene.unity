@@ -468,10 +468,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2893580386468053368, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
     - target: {fileID: 5471875227667789762, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: m_Name
       value: Spikes (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7856896400322166973, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
+    - target: {fileID: 9166025551946714782, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -861,10 +873,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2893580386468053368, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
     - target: {fileID: 5471875227667789762, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7856896400322166973, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
+    - target: {fileID: 9166025551946714782, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1230,20 +1254,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
-        m_MethodName: UpdateWithFloatData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 1279799770}
+        m_TargetAssemblyTypeName: MySimpleImageBehaviour, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
         m_Arguments:
@@ -1628,7 +1640,7 @@ PrefabInstance:
     - target: {fileID: 2893580386468053368, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279799770}
     - target: {fileID: 5471875227667789762, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -1636,11 +1648,11 @@ PrefabInstance:
     - target: {fileID: 7856896400322166973, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279799770}
     - target: {fileID: 9166025551946714782, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279799770}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2838,7 +2850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71f7750b9be60dd44bfba3e2bcf58213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MySimpleImageBehaviour
-  dataObj: {fileID: 0}
+  dataObj: {fileID: 11400000, guid: 5265fc9bf5687b642ab82a31635cb33d, type: 2}
 --- !u!198 &1354208889 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 842374597688823288, guid: e760143ffb2405d409f3942446e82540, type: 3}
@@ -4038,10 +4050,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2893580386468053368, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
     - target: {fileID: 5471875227667789762, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
       propertyPath: m_Name
       value: Spikes (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7856896400322166973, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
+    - target: {fileID: 9166025551946714782, guid: 5057eb81f9b013846a22fbc6bd489d8e, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4776,18 +4800,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1257229746}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 5265fc9bf5687b642ab82a31635cb33d, type: 2}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1279799770}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
@@ -4795,15 +4843,51 @@ PrefabInstance:
       value: Emit
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: UpdateValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: UpdateWithFloatData
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.ParticleSystem, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SimpleFloatData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: MySimpleImageBehaviour, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353005034686907231, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8401236134366061759, guid: 4aed66835a7061b418379017c0e75af8, type: 3}
