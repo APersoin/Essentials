@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: tupperware.ma
-//Last modified: Tue, Nov 25, 2025 12:31:33 PM
+//Last modified: Tue, Nov 25, 2025 12:32:14 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,13 +11,13 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "03E3E908-4140-EEFC-081F-959D9C43646E";
+fileInfo "UUID" "EC14A8FC-4848-A83B-B4B6-D1B7268D70B7";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "0B5CC58A-4462-581E-9FD8-8DB7164DCC75";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.071392960553144591 4.0834767275459285 4.0997791817689135 ;
-	setAttr ".r" -type "double3" -396.33835271984998 2881.3999999985472 4.9711006141157436e-17 ;
+	setAttr ".t" -type "double3" -4.4619968010873761 2.0317366082509727 2.8703457189459352 ;
+	setAttr ".r" -type "double3" -373.53835271984275 2827.3999999984385 1.3091377996801429e-15 ;
 	setAttr ".rp" -type "double3" -4.4408920985006262e-16 -5.5511151231257827e-17 0 ;
 	setAttr ".rpt" -type "double3" 8.8973627677183624e-16 1.5270371814854361e-17 -8.7227078509644656e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
