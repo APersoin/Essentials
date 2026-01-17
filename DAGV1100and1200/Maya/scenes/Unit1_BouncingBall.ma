@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit1_BouncingBall.ma
-//Last modified: Fri, Jan 16, 2026 07:47:36 PM
+//Last modified: Fri, Jan 16, 2026 09:26:15 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.4.2";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "C9138CA8-4FA7-9BA0-4EC7-589248B53111";
+fileInfo "UUID" "74C66767-4632-3EF8-7FA8-C8BEC38B50B8";
 createNode transform -s -n "persp";
 	rename -uid "BF08ED04-447B-4409-A796-FB90F5BD065E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 44.940863938439797 4.6133091779809945 1.1458338690079479 ;
-	setAttr ".r" -type "double3" 0.26164727040201385 92.599999999995418 0 ;
+	setAttr ".t" -type "double3" 31.51037475496592 4.1824427679194791 13.316778990546627 ;
+	setAttr ".r" -type "double3" 0.26164727039472335 66.599999999998246 -6.2566323616162446e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E18C38C2-4C70-A1BC-0A13-098AE8FBBADF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.803582526115974;
+	setAttr ".coi" 32.86778881211481;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -160,16 +160,52 @@ createNode animCurveTL -n "Ball_translateY";
 	rename -uid "A2E3BBDB-438B-4804-C10E-CCAA3AD5CD42";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 12 7.7444153908187534 24 1;
+	setAttr -s 3 ".ktv[0:2]"  0 0.535 12 7.7444153908187534 24 0.53505200450710677;
 	setAttr -s 3 ".kit[1:2]"  18 1;
 	setAttr -s 3 ".kot[1:2]"  18 1;
-	setAttr -s 3 ".kix[0:2]"  0.036396639017755771 1 0.028888080637241031;
-	setAttr -s 3 ".kiy[0:2]"  0.99933742282985238 0 -0.99958265230900056;
-	setAttr -s 3 ".kox[0:2]"  0.036396654639140512 1 0.028888064718015957;
-	setAttr -s 3 ".koy[0:2]"  0.99933742226090938 0 -0.99958265276906832;
+	setAttr -s 3 ".kix[0:2]"  0.026665456285591849 1 0.028888080637241031;
+	setAttr -s 3 ".kiy[0:2]"  0.99964441349966104 0 -0.99958265230900056;
+	setAttr -s 3 ".kox[0:2]"  0.026665488659817962 1 0.028888064718015957;
+	setAttr -s 3 ".koy[0:2]"  0.99964441263607995 0 -0.99958265276906832;
+createNode animCurveTU -n "Ball_scaleX";
+	rename -uid "C31E418E-41D2-3B80-CE0B-10A0AAC88FE1";
+	setAttr ".tan" 1;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  0 1.1058860449383132 1 0.74342068792999705
+		 2 1 22 1 23 0.74342068792999705 24 1.1058860449383132;
+	setAttr -s 6 ".kit[3:5]"  18 18 18;
+	setAttr -s 6 ".kot[3:5]"  18 18 18;
+	setAttr -s 6 ".kix[0:5]"  1 1 1 1 1 1;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  1 1 1 1 1 1;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
+createNode animCurveTU -n "Ball_scaleY";
+	rename -uid "754E0A5A-4363-BA07-30B9-638B67004A9C";
+	setAttr ".tan" 1;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  0 0.51748357071419959 1 1.2056111096205333
+		 2 1 22 1 23 1.2056111096205333 24 0.51748357071419959;
+	setAttr -s 6 ".kit[3:5]"  18 18 18;
+	setAttr -s 6 ".kot[3:5]"  18 18 18;
+	setAttr -s 6 ".kix[0:5]"  1 1 1 1 1 1;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  1 1 1 1 1 1;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
+createNode animCurveTU -n "Ball_scaleZ";
+	rename -uid "FA36C9FB-465A-3D35-C964-9F808A119A9C";
+	setAttr ".tan" 1;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  0 1.1058860449383132 1 0.74342068792999705
+		 2 1 22 1 23 0.74342068792999705 24 1.1058860449383132;
+	setAttr -s 6 ".kit[3:5]"  18 18 18;
+	setAttr -s 6 ".kot[3:5]"  18 18 18;
+	setAttr -s 6 ".kix[0:5]"  1 1 1 1 1 1;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  1 1 1 1 1 1;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 select -ne :time1;
-	setAttr ".o" 5;
-	setAttr ".unw" 5;
+	setAttr ".o" 16;
+	setAttr ".unw" 16;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -214,6 +250,9 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 connectAttr "Ball_translateY.o" "Ball.ty";
+connectAttr "Ball_scaleX.o" "Ball.sx";
+connectAttr "Ball_scaleY.o" "Ball.sy";
+connectAttr "Ball_scaleZ.o" "Ball.sz";
 connectAttr "polySphere1.out" "BallShape.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
