@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit1_BouncingBall.ma
-//Last modified: Fri, Jan 16, 2026 09:26:15 PM
+//Last modified: Fri, Jan 16, 2026 09:31:50 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.4.2";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "74C66767-4632-3EF8-7FA8-C8BEC38B50B8";
+fileInfo "UUID" "41C693DC-4B10-0988-5026-EBBD1E33C0D2";
 createNode transform -s -n "persp";
 	rename -uid "BF08ED04-447B-4409-A796-FB90F5BD065E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 31.51037475496592 4.1824427679194791 13.316778990546627 ;
-	setAttr ".r" -type "double3" 0.26164727039472335 66.599999999998246 -6.2566323616162446e-17 ;
+	setAttr ".t" -type "double3" 41.16627047666217 9.4808586538589097 5.6371950492778886 ;
+	setAttr ".r" -type "double3" -8.1383527296044207 83.799999999983442 7.3624390179525817e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E18C38C2-4C70-A1BC-0A13-098AE8FBBADF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 32.86778881211481;
+	setAttr ".coi" 41.653906795584831;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -204,8 +204,8 @@ createNode animCurveTU -n "Ball_scaleZ";
 	setAttr -s 6 ".kox[0:5]"  1 1 1 1 1 1;
 	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 select -ne :time1;
-	setAttr ".o" 16;
-	setAttr ".unw" 16;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
