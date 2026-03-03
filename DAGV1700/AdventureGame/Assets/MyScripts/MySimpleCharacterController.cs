@@ -19,9 +19,9 @@ public class MySimpleCharacterController : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 velocity;
-    private Transform thisTransform;	
-	private int jumpCount = 0;
-	private int maxJumps = 2;
+    private Transform thisTransform;
+    private int jumpCount = 0;
+    private int maxJumps = 2;
     //add a roll to the character controller
    
     
@@ -41,7 +41,7 @@ public class MySimpleCharacterController : MonoBehaviour
     private void Update()
     {
         MoveCharacter();
-	controller.Move(velocity * Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime);
         ApplyGravity();
         KeepCharacterOnXAxis();
     }
@@ -60,7 +60,7 @@ public class MySimpleCharacterController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-		jumpCount++;
+            jumpCount++;
         }
     }
 
@@ -78,7 +78,7 @@ public class MySimpleCharacterController : MonoBehaviour
         {
             // Reset vertical velocity when on the ground
             velocity.y = 0f;
-		jumpCount = 0;
+            jumpCount = 0;
         }
 
         // Apply velocity
