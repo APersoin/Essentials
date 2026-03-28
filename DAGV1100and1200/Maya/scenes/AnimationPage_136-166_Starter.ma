@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: AnimationPage_136-166_Starter.ma
-//Last modified: Fri, Mar 20, 2026 07:42:31 PM
+//Last modified: Fri, Mar 20, 2026 07:54:59 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Bony_v1_0_5" -rfn "Ultimate_Bony_v1_0_5RN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Bony_v1.0.5.ma";
@@ -18,12 +18,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "E7543EB1-4696-39A8-5A94-88895EA4E5AD";
+fileInfo "UUID" "CF107938-4C9E-43E5-E9E9-1F8A8C203CED";
 createNode transform -s -n "persp";
 	rename -uid "A99A115B-2B40-A95A-EB94-24A6C71E6B67";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 13.915164747398657 8.4096283307053046 29.681035893311574 ;
-	setAttr ".r" -type "double3" -6.338352709953103 1464.2000000000951 2.1793694061459929e-16 ;
+	setAttr ".t" -type "double3" 32.429438612188207 10.083804588437983 3.8580661275447454 ;
+	setAttr ".r" -type "double3" -9.3383527099577712 1523.8000000000577 7.3624390180404072e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "23F191FC-AA4C-36B2-3112-5F83AEC65EF3";
 	setAttr -k off ".v" no;
@@ -85,7 +85,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode fosterParent -n "Ultimate_Bony_v1_0_5RNfosterParent1";
-	rename -uid "463257F5-4DCD-DA06-AA7B-A693C7EF5A41";
+	rename -uid "21C283B6-48F7-785C-7F11-F39BE80D7818";
 createNode transform -n "Bony_lFootIKC3" -p "Ultimate_Bony_v1_0_5RNfosterParent1";
 	rename -uid "8B666C88-422F-E10C-A776-2792C1E3A3CA";
 	addAttr -ci true -sn "Stretch" -ln "Stretch" -min 0 -max 1 -at "double";
@@ -2088,8 +2088,8 @@ createNode animCurveTU -n "Bony_HeadC_HeadOrient";
 	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
 		5;
 select -ne :time1;
-	setAttr ".o" 10;
-	setAttr ".unw" 10;
+	setAttr ".o" 11;
+	setAttr ".unw" 11;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
